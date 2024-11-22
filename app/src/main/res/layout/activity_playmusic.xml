@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/xml"
+    tools:context="com.god.lcproclientapp.playmusic">
+
+    <ImageView
+        android:id="@+id/activity_playMusic_imgView_album_art"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/change"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/y"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <SeekBar
+            android:id="@+id/volume"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dynamiciland"
+            android:visibility="invisible">
+
+        </SeekBar>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/downarrow"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:layout_height="wrap_content">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/y"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/btnsongs"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/who"
+                android:text="SONGS"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnly"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btnsongs"
+                android:background="@drawable/where"
+                android:text="LYRICS"
+                android:textColor="@color/white">
+
+            </Button>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/activityy_playmusic_jcPlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:seek_bar_color="#03A9F4"
+        app:next_icon_color="#03A9F4"
+        app:pause_icon_color="#03A9F4"
+        app:play_icon_color="#03A9F4"
+        app:repeat_icon_color="#03A9F4"
+        app:repeat_one_icon_color="#03A9F4"
+        app:previous_icon_color="#03A9F4"
+        app:progress_color="#03A9F4"
+        app:random_icon_color="#03A9F4"
+        app:text_audio_current_duration_color="#03A9F4"
+        app:text_audio_duration_color="#03A9F4"
+        app:text_audio_title_color="#03A9F4"
+        android:layout_above="@+id/gridlocateplaymusic" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/activityy_playmusic_jcPlayerView"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp">
+
+
+        <ImageView
+            android:id="@+id/volumeicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/baseline_volume_up_24">
+
+        </ImageView>
+
+
+        <ImageView
+
+            android:id="@+id/playlist1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_playlist_add_24" />
+
+        <ImageView
+            android:id="@+id/playlist2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_playlist_add_check_24"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/heart2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_favorite_24"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_favorite_border_24" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/heartgif"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/heartgiflc1"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/ela"
+        android:layout_below="@+id/change">
+
+        <Button
+            android:id="@+id/circle1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/gere3"
+            android:visibility="invisible">
+
+        </Button>
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/circle2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/gere3">
+
+        </Button>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/empty"
+        android:layout_below="@+id/ela"
+        android:layout_marginTop="80dp">
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/circle3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/gere3">
+
+        </Button>
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/circle4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/gere3">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/gridlocateplaymusic"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <GridLayout
+            android:id="@+id/gridmain"
+            android:layout_margin="2dp"
+            android:layout_alignParentStart="true"
+            android:rowCount="1"
+            android:columnCount="5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+
+            <ImageView
+                android:src="@drawable/home"
+                android:id="@+id/hpm"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/lpm"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:src="@drawable/liboutline"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/upm"
+                android:src="@drawable/upoutline"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/spm"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:src="@drawable/searchoutline"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/ppm"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+
+            </ImageView>
+
+        </GridLayout>
+        <GridLayout
+            android:layout_alignParentStart="true"
+            android:rowCount="1"
+            android:columnCount="5"
+            android:id="@+id/gristext"
+            android:layout_below="@+id/gridmain"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="home"
+                android:textSize="10dp">
+
+            </TextView>
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Library">
+
+            </TextView>
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+
+                android:layout_columnWeight="1"
+                android:text="Upload">
+
+            </TextView>
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Search">
+
+            </TextView>
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Profile">
+
+            </TextView>
+
+        </GridLayout>
+    </RelativeLayout>
+</RelativeLayout>

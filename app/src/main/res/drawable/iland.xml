@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <path
+        android:name="island"
+        android:pathData="M50,10 L10,40 L20,90 L50,70 L80,90 L90,40 Z"
+        android:fillColor="#FF00FF00" />
+
+</vector>

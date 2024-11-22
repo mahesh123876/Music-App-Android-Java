@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.god.lcproclientapp.imageslideradmin">
+    <ImageButton
+        android:id="@+id/imageplace"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/design"
+        android:src="@drawable/ic_baseline_cloud_download_24">
+
+    </ImageButton>
+    <EditText
+        android:id="@+id/textimageslider"
+        android:background="@drawable/design"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imageplace"
+        android:layout_margin="5dp"
+        android:layout_height="40dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/saveimageslider"
+        android:background="@drawable/design"
+        android:text="save"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+
+    </Button>
+    <Button
+        android:id="@+id/deletealldata"
+        android:background="@drawable/design"
+        android:text="Delete"
+        android:layout_below="@+id/saveimageslider"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/testalign"
+        android:background="@drawable/profiledir"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/backarrowforprofile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/feedback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/baseline_feedback_24">
+
+        </ImageView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:id="@+id/cardviewimage"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="150dp"
+            android:background="@drawable/lyrics">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent"
+                android:id="@+id/reccycleimagepro">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:src="@drawable/endlineimage"
+            android:gravity="center"
+            android:textColor="#03A9F4"
+            android:text="⊱ ──────── ✞ ──────── ⊰"
+            android:layout_height="30dp">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/testalign"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/twocard"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    app:cardBackgroundColor="#BDE6F8"
+                    app:cardCornerRadius="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:id="@+id/numberofsongs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="23dp">
+
+                        </TextView>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:text="Songs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_alignParentEnd="true"
+                    app:cardBackgroundColor="#FDCBDC"
+                    app:cardCornerRadius="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/numberoflyrics"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textColor="@color/black"
+
+                            android:textSize="23dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:text="Lyrics"
+                            android:textColor="@color/black"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/twocard"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/usernameforprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/txtfieldbackground"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp">
+
+                        <ImageView
+                            android:id="@+id/usericonforprofile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/userforpro">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtfirstnamepro"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:textSize="15dp">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/emailforprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/usernameforprofile"
+                android:layout_margin="15dp"
+                android:background="@drawable/txtfieldbackground"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp">
+
+                        <ImageView
+                            android:id="@+id/emailiconforprofile"
+                            android:layout_width="17dp"
+                            android:layout_height="22dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/profiletest">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtlastnamepro"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:textSize="15dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/passwordforprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/emailforprofile"
+                android:layout_margin="15dp"
+                android:background="@drawable/txtfieldbackground"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtpasspro"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:inputType="textPassword"
+                        android:textSize="15dp">
+
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/eyeshow"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="3dp">
+
+                        <ImageView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/show">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/eyehide"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="3dp"
+                        android:visibility="invisible">
+                        >
+
+                        <ImageView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/eyeiconforpro">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp">
+
+                        <ImageView
+                            android:id="@+id/lockiconforprofile"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/secureforpro">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/darkmodecardview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/passwordforprofile"
+                android:layout_margin="15dp"
+                android:background="@drawable/txtfieldbackground"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp">
+
+                        <ImageView
+                            android:id="@+id/darkmodeimage"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/brightnessforpro">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/darkmodetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="App Modes"
+                        android:textSize="15dp">
+
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/developedbyind"
+        android:textColor="@color/black"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</RelativeLayout>

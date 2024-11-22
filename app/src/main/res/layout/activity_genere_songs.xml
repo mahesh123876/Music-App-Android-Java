@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.god.lcproclientapp.Adapter.GenereSongsActivity">
+
+    <RelativeLayout
+        android:id="@+id/headergenere"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/contin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/navtopetrend"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:onClick="showPopup"
+            android:src="@drawable/ic_baseline_view_headline_24">
+
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/nothing"
+
+
+            >
+
+        </ImageView>
+
+
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleviewgenereSongs"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headergenere"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+<pl.droidsonroids.gif.GifImageView
+    android:id="@+id/genereprogress"
+    android:src="@drawable/wavetry"
+    android:layout_centerInParent="true"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:indeterminate="true">
+
+</pl.droidsonroids.gif.GifImageView>
+    <RelativeLayout
+        android:id="@+id/genereforloop"
+        android:layout_width="100dp"
+        android:visibility="invisible"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagviewdraggenere"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/drag">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/playicongenere"
+            android:src="@drawable/ic_play"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/pauseicongenere"
+            android:src="@drawable/ic_pause"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/genereJcplayer"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    </com.example.jean.jcplayer.view.JcPlayerView>
+
+
+    <RelativeLayout
+        android:id="@+id/prorege"
+        android:visibility="invisible"
+        android:layout_width="250dp"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:background="@drawable/navdesign"
+            android:id="@+id/prologofornavge"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <RelativeLayout
+                android:id="@+id/proavatarge"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/letter"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/emailfirstproge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/protxtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/proavatarge"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/proendlinege"
+            android:layout_below="@+id/prologofornavge"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:text="⊱ ─── ✞ ─── ⊰"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/proclosenavge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_close_24">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/proopennavge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"
+            android:src="@drawable/ic_baseline_view_headline_24">
+        </ImageView>
+        <RelativeLayout
+            android:id="@+id/prodetailsfornavge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/proendlinege"
+            android:layout_marginTop="70dp">
+
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:id="@+id/proprofilefornavge"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="PROFILE"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                   >
+
+                </TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:id="@+id/proHelpfornavge"
+                android:layout_below="@+id/proprofilefornavge"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="HELP"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:id="@+id/prokaraokefornavge"
+                android:layout_below="@+id/proHelpfornavge"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="KARAOKE"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:id="@+id/prochordchartfornavge"
+                android:layout_below="@+id/prokaraokefornavge"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="CHORD CHART"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/propowerge"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_baseline_power_settings_new_24"
+                android:layout_alignParentBottom="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/gridlocatege"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <GridLayout
+            android:id="@+id/gridproge"
+            android:layout_margin="2dp"
+            android:layout_alignParentStart="true"
+            android:rowCount="1"
+            android:columnCount="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/generehome"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:src="@drawable/homelight"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="home"
+                    android:textSize="10dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/generelib"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <ImageView
+                    android:src="@drawable/liblight"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="library"
+                    android:textSize="10dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/genereup"
+
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+                <ImageView
+                    android:src="@drawable/uploadlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="upload"
+                    android:textSize="10dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/generese"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+                <ImageView
+                    android:src="@drawable/searchlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="search"
+                    android:textSize="10dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/generelyrics"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+                <ImageView
+                    android:src="@drawable/lyricslight"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="lyrics"
+                    android:textSize="10dp">
+
+                </TextView>
+            </LinearLayout>
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:layout_alignParentStart="true"
+            android:rowCount="1"
+            android:columnCount="5"
+            android:id="@+id/gristextge"
+            android:layout_below="@+id/gridproge"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:textAlignment="center"
+
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="home"
+                android:textSize="10dp">
+
+            </TextView>
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+
+                android:layout_columnWeight="1"
+                android:text="Library">
+
+            </TextView>
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+
+                android:layout_columnWeight="1"
+                android:text="Upload">
+
+            </TextView>
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Search">
+
+            </TextView>
+            <TextView
+                android:textSize="10dp"
+                android:textAlignment="center"
+
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1"
+
+                android:layout_columnWeight="1"
+                android:text="Profile">
+
+            </TextView>
+
+        </GridLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

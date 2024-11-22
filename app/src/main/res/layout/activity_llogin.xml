@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.god.lcproclientapp.LLogin">
+
+
+
+   <RelativeLayout
+       android:id="@+id/formal"
+       android:visibility="invisible"
+       android:layout_width="match_parent"
+       android:layout_height="150dp">
+
+
+
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/formal"
+        android:layout_toLeftOf="@+id/hlafmusicicon"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_width="200dp"
+            android:layout_centerInParent="true"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtm1"
+                android:layout_width="match_parent"
+                android:text="Getting"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#F6A3BF"
+                android:gravity="center"
+                android:layout_height="40dp">
+
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="the most"
+                android:id="@+id/txtm2"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#F6A3BF"
+                android:gravity="center"
+                android:layout_height="40dp">
+
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="out of"
+                android:textSize="30dp"
+                android:id="@+id/txtm3"
+                android:textStyle="bold"
+                android:textColor="#F6A3BF"
+                android:gravity="center"
+                android:layout_height="40dp">
+
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="music"
+                android:textSize="30dp"
+                android:id="@+id/txtm4"
+                android:textStyle="bold"
+                android:textColor="#D16C8E"
+                android:gravity="center"
+                android:layout_height="40dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/hlafmusicicon"
+        android:layout_below="@+id/formal"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:src="@drawable/hd2"
+        android:layout_height="400dp">
+
+    </ImageView>
+
+
+
+
+
+
+
+
+    <com.github.furkankaplan.fkblurview.FKBlurView
+        android:id="@+id/registermainlayout"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:layout_margin="10dp"
+        android:layout_height="550dp">
+        <RelativeLayout
+            android:id="@+id/supportforregistermainlayout"
+            android:layout_width="match_parent"
+            android:background="@drawable/deignforbottom"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/closeregister"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"
+                android:src="@drawable/baseline_close_24">
+
+            </ImageView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chooseimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="150dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/setimage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/baseline_add_photo_alternate_24">
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/registercenterbox"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:id="@+id/txtfieldusernamelayout"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/txtfieldbackground">
+
+                    <RelativeLayout
+                        android:id="@+id/userimageforregister"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_person_outline_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/userimageforregister">
+
+                        <EditText
+                            android:id="@+id/edittext_username_for_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:textColorHint="@color/black"
+                            android:hint="Username of 6 Characters"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="15dp">
+
+                        </EditText>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/txtfieldemaillayoutforregister"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txtfieldusernamelayout"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/txtfieldbackground">
+
+                    <RelativeLayout
+                        android:id="@+id/emailimageforregister"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_mail_outline_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/emailimageforregister">
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:id="@+id/edittext_email_for_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="Gmail"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/black"
+                            android:textSize="15dp">
+
+                        </EditText>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/txtfieldphonelayoutforregister"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txtfieldpasswordlayoutforregister"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/txtfieldbackground">
+
+                    <RelativeLayout
+                        android:id="@+id/phoneimageforregister"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_phone_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/phoneimageforregister">
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:id="@+id/edittext_phone_for_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="Phone Number"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textSize="15dp">
+
+                        </EditText>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/txtfieldpasswordlayoutforregister"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txtfieldemaillayoutforregister"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/txtfieldbackground">
+
+                    <RelativeLayout
+                        android:id="@+id/lockimageforregister"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_baseline_lock_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/showpasswordforregister"
+                        android:layout_toRightOf="@+id/lockimageforregister">
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:id="@+id/edittext_password_for_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="Password of 6 digit"
+                            android:inputType="textPassword"
+                            android:textColor="@color/black"
+                            android:textSize="15dp">
+
+                        </EditText>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/showpasswordforregister"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_remove_red_eye_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/hidepasswordforregister"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/hidetext">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeRegistertbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/loginbtnbackground">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Sign Up"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/alredyhaveanaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registercenterbox"
+                android:layout_centerInParent="true"
+                android:text="Already have an account ? Login"
+                android:textSize="14dp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </com.github.furkankaplan.fkblurview.FKBlurView>
+
+
+
+        <ProgressBar
+            android:layout_width="150dp"
+            android:id="@+id/progressforregister"
+            android:visibility="invisible"
+            android:layout_height="150dp"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            android:progressDrawable="@drawable/wavetry">
+
+        </ProgressBar>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bt_sign_in"
+        app:cardCornerRadius="25dp"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagegoogle"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/google"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/imagegoogle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Continue With Google"
+                    android:textColor="@color/black"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

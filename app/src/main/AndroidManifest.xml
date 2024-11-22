@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/nothing"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/nothing"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gods"
+        tools:targetApi="31">
+        <activity
+            android:name=".betaversion"
+            android:exported="false" />
+        <activity
+            android:name=".Forgetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".casedev"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".vitukodukathavar"
+            android:exported="false" />
+        <activity
+            android:name=".Glasslogin"
+            android:exported="false" />
+        <activity
+            android:name=".newsplash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".loginandregistermake"
+            android:exported="false" />
+        <activity
+            android:name=".LLogin"
+            android:exported="false" />
+        <activity
+            android:name=".adminavataractivity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting"
+            android:exported="false" />
+        <activity
+            android:name=".slider"
+            android:exported="false" />
+        <activity
+            android:name=".fullalbums"
+            android:exported="false" />
+        <activity
+            android:name=".Rules"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter.ArtistSongsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter.TrendingSongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".imageslideradmin"
+            android:exported="false" />
+        <activity
+            android:name=".uploadlyricsadmin"
+            android:exported="false" />
+        <activity
+            android:name=".playlist"
+            android:exported="false" />
+        <activity
+            android:name=".favoritesongs"
+            android:exported="false" />
+        <activity
+            android:name=".recentlyplayed"
+            android:exported="false" />
+        <activity
+            android:name=".number"
+            android:exported="false" />
+        <activity
+            android:name=".lyrics"
+            android:exported="false" />
+        <activity
+            android:name=".gif"
+            android:exported="false" />
+        <activity
+            android:name=".chart"
+            android:exported="false" />
+        <activity
+            android:name=".karaoke"
+            android:exported="false" />
+        <activity
+            android:name=".logoutsplash"
+            android:exported="false" />
+        <activity
+            android:name=".userupdate"
+            android:exported="false" />
+        <activity
+            android:name=".playmusic"
+            android:exported="false" />
+        <activity
+            android:name=".upload"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".searchview"
+            android:exported="false" />
+        <activity
+            android:name=".library"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".reg"
+            android:exported="false" />
+        <activity
+            android:name=".fg2"
+            android:exported="false" />
+        <activity
+            android:name=".welcome"
+            android:exported="false" />
+        <activity
+            android:name=".fg1"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter.GenereSongsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:exported="false"
+            android:supportsPictureInPicture="true" />
+        <activity
+            android:name="Model.SongsActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".FloatingViewService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection"
+            tools:targetApi="q" />
+    </application>
+
+</manifest>

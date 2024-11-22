@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="40dp"
+    app:cardCornerRadius="40dp"
+    android:background="@drawable/nothing"
+    android:layout_height="400dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/rulesappicom"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/nothing"
+            android:layout_margin="10dp"
+            android:layout_width="230dp"
+            android:layout_height="230dp">
+
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Connect With Christ"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/rulesappicom"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

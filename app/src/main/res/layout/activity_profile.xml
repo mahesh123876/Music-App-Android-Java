@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.god.lcproclientapp.profile">
+
+
+    <RelativeLayout
+        android:id="@+id/headerlib"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/contin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/navtopelib"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="showPopup"
+            android:src="@drawable/ic_baseline_view_headline_24">
+
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/nothing"
+            >
+
+        </ImageView>
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/lyrics"
+    android:id="@+id/mainser"
+        android:layout_margin="3dp"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/headerlib"
+    android:layout_height="50dp">
+
+
+        <EditText
+            android:id="@+id/lyricssreach"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@+id/serachiconinprofile"
+            android:background="#D2FAFB"
+            android:textSize="15dp"
+            android:layout_toLeftOf="@+id/lyricsvoice"
+            android:hint="Search The Lyrics......"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textAlignment="center">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/serachiconinprofile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/searchoutline">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/lyricsvoice"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_keyboard_voice_24">
+
+        </ImageView>
+
+</RelativeLayout>
+    <TextView
+        android:id="@+id/txtvoicef"
+        android:visibility="invisible"
+        android:layout_below="@+id/mainser"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txtalpha"
+        android:visibility="invisible"
+        android:layout_below="@+id/txtvoicef"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclelyrics"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/alphalay"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/gridlocate"
+        android:layout_below="@+id/mainser">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/alphalay"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/gridlocate"
+        android:gravity="center"
+        android:layout_below="@+id/mainser"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="A"
+            android:id="@+id/a1"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="B"
+            android:id="@+id/a2"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="C"
+            android:id="@+id/a3"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="D"
+            android:id="@+id/a4"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="E"
+            android:id="@+id/a5"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="F"
+            android:id="@+id/a6"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="G"
+            android:id="@+id/a7"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="H"
+            android:id="@+id/a8"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="I"
+            android:id="@+id/a9"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="J"
+            android:id="@+id/a10"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="K"
+            android:id="@+id/a11"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="L"
+            android:id="@+id/a12"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="M"
+            android:id="@+id/a13"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="N"
+            android:id="@+id/a14"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="O"
+            android:id="@+id/a15"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="P"
+            android:id="@+id/a16"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="Q"
+            android:id="@+id/a17"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="R"
+            android:id="@+id/a18"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="S"
+            android:id="@+id/a19"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="T"
+            android:id="@+id/a20"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="U"
+            android:id="@+id/a21"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="V"
+            android:id="@+id/a22"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="W"
+            android:id="@+id/a23"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="X"
+            android:id="@+id/a24"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="Y"
+            android:id="@+id/a25"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:text="Z"
+            android:id="@+id/a26"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gridlocate"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <GridLayout
+            android:id="@+id/gridpro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:columnCount="5"
+            android:rowCount="1">
+            <LinearLayout
+                android:id="@+id/promain"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:src="@drawable/homelight"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="home"
+                    android:textSize="10dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/prolib"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <ImageView
+                    android:src="@drawable/liblight"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="library"
+                    android:textSize="10dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/proup"
+
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+                <ImageView
+                    android:src="@drawable/uploadlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="upload"
+                    android:textSize="10dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/prose"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+                <ImageView
+                    android:src="@drawable/searchlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="search"
+                    android:textSize="10dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/prolyrics"
+                android:layout_margin="2dp"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+                <ImageView
+                    android:src="@drawable/lyricsdark"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="lyrics"
+                    android:textSize="10dp">
+
+                </TextView>
+            </LinearLayout>
+
+        </GridLayout>
+
+
+    <GridLayout
+        android:layout_alignParentStart="true"
+        android:rowCount="1"
+        android:columnCount="5"
+        android:id="@+id/gristext"
+        android:layout_below="@+id/gridpro"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:textAlignment="center"
+
+            android:layout_margin="2dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="home"
+            android:textSize="10dp">
+
+        </TextView>
+        <TextView
+            android:textSize="10dp"
+            android:textAlignment="center"
+
+            android:layout_margin="2dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:text="Library">
+
+        </TextView>
+        <TextView
+            android:textSize="10dp"
+            android:textAlignment="center"
+
+            android:layout_margin="2dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:text="Upload">
+
+        </TextView>
+        <TextView
+            android:textSize="10dp"
+            android:textAlignment="center"
+
+            android:layout_margin="2dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Search">
+
+        </TextView>
+        <TextView
+            android:textSize="10dp"
+            android:textAlignment="center"
+
+            android:layout_margin="2dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:text="Profile">
+
+        </TextView>
+
+    </GridLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/forloop"
+        android:layout_width="100dp"
+        android:visibility="invisible"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagviewdraglyrics"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/drag">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/playiconpro"
+            android:src="@drawable/ic_play"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/pauseiconpro"
+            android:src="@drawable/ic_pause"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/prore"
+        android:visibility="invisible"
+        android:layout_width="250dp"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:background="@drawable/contin"
+            android:id="@+id/prologofornav"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <RelativeLayout
+                android:id="@+id/proavatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/letter"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                >
+                <TextView
+                    android:id="@+id/emailfirstpro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/protxtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/proavatar"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/proendline"
+            android:layout_below="@+id/prologofornav"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:text="⊱ ─── ✞ ─── ⊰"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/proclosenav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_close_24">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/proopennav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"
+            android:src="@drawable/ic_baseline_view_headline_24">
+        </ImageView>
+        <RelativeLayout
+            android:id="@+id/prodetailsfornav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/proendline"
+            android:layout_marginTop="70dp">
+
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:id="@+id/proprofilefornav"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="PROFILE"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:id="@+id/proHelpfornav"
+                android:layout_below="@+id/proprofilefornav"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="HELP"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:id="@+id/prokaraokefornav"
+                android:layout_below="@+id/proHelpfornav"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="KARAOKE"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:id="@+id/prochordchartfornav"
+                android:layout_below="@+id/prokaraokefornav"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="CHORD CHART"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/propower"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_baseline_power_settings_new_24">
+
+            </ImageView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/profileprogress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/wavetry">
+
+    </pl.droidsonroids.gif.GifImageView>
+
+</RelativeLayout>

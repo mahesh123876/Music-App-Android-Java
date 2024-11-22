@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainidforrelative"
+    tools:context="com.god.lcproclientapp.MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/contin">
+
+        <ImageView
+            android:id="@+id/navtope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="showPopup"
+            android:src="@drawable/ic_baseline_view_headline_24">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/mainab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/nothing">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/gridlocate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                >
+
+ <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/imagesliderrecycleview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                >
+                <TextView
+                    android:background="@drawable/lyrics"
+                    android:id="@+id/trendtext"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:text="Trending Songs"
+                    android:textSize="15dp"
+                   >
+
+                </TextView>
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/trendarrow"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:layout_alignParentEnd="true">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/trendingsongrecycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:id="@+id/txtalbums"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="150dp"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:text="Albums"
+                    android:gravity="center"
+                    android:background="@drawable/lyrics"
+                    android:textSize="15dp"
+                 >
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/albumsarrow"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-2dp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    >
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/recycleviewmain"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtGenere"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="Genres"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@drawable/lyrics"
+                    android:textSize="15dp">
+
+                </TextView>
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/generearrow"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:layout_alignParentEnd="true">
+
+                </ImageView>
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/genererecycleview"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/gridlocate"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+ <GridLayout
+    android:id="@+id/gridmain"
+    android:layout_margin="2dp"
+    android:layout_centerInParent="true"
+    android:rowCount="1"
+    android:columnCount="7"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <LinearLayout
+        android:id="@+id/hmainact"
+        android:layout_margin="2dp"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/homedark"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="home"
+            android:textSize="10dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lmainact"
+        android:layout_margin="2dp"
+        android:layout_gravity="fill"
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1">
+        <ImageView
+            android:src="@drawable/liblight"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="library"
+            android:textSize="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/umainact"
+        android:layout_margin="2dp"
+        android:layout_gravity="fill"
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        >
+
+        <ImageView
+            android:src="@drawable/uploadlight"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="upload"
+            android:textSize="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/smainact"
+        android:layout_margin="2dp"
+        android:layout_gravity="fill"
+        android:orientation="vertical"
+
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        >
+        <ImageView
+            android:src="@drawable/searchlight"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="search"
+            android:textSize="10dp">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pmainact"
+        android:layout_margin="2dp"
+        android:layout_gravity="fill"
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        >
+        <ImageView
+            android:src="@drawable/lyricslight"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="lyrics"
+            android:textSize="10dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+</GridLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/forloopmain"
+        android:layout_width="100dp"
+        android:visibility="invisible"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagviewdragmain"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/drag"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/playiconmain"
+            android:src="@drawable/ic_play"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/pauseiconmain"
+            android:src="@drawable/ic_pause"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:visibility="invisible"
+        android:layout_width="240dp"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/logofornav"
+            android:background="@drawable/contin"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/gmailrelative"
+                android:layout_width="70dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/letter"
+                android:layout_height="70dp"
+                >
+
+                <TextView
+                    android:id="@+id/emailfirst"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gmailrelative"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/endline"
+            android:layout_below="@+id/logofornav"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:text="⊱ ─── ✞ ─── ⊰"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/closenav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_close_24">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/opennav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible"
+            android:src="@drawable/baseline_close_24">
+        </ImageView>
+
+<RelativeLayout
+    android:id="@+id/detailsfornav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/endline"
+    android:layout_marginTop="70dp">
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:id="@+id/profilefornav"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/textsetting"
+            android:layout_width="match_parent"
+            android:text="PROFILE"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:id="@+id/Helpfornav"
+        android:layout_below="@+id/profilefornav"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/texthelp"
+            android:layout_width="match_parent"
+            android:text="HELP"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:id="@+id/karaokefornav"
+        android:layout_below="@+id/Helpfornav"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/textkaraoke"
+            android:layout_width="match_parent"
+            android:text="KARAOKE"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:id="@+id/chordchartfornav"
+        android:layout_below="@+id/karaokefornav"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/textchart"
+            android:layout_width="match_parent"
+            android:text="CHORD CHART"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/power"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_baseline_power_settings_new_24"
+        android:layout_alignParentBottom="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+
+    </ImageView>
+
+</RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

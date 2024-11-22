@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idforplaymusicnav">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/testre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homefornav"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/testre"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/circleforpopup">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_home_24">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/libfornav"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/testre"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circleforpopup">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_library_music_24">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/test2re"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/libfornav">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/test3re"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/playingalbumfornav">
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/uploadfornav"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/test3re"
+            android:background="@drawable/circleforpopup">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_lyrics_24">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchfornav"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/test3re"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circleforpopup">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_playlist_play_24">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyricsfornav"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/test2re"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circleforpopup">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_arrow_circle_down_24">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/playingalbumfornav"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/test2re"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circleforpopup">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_search_24">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/progressback"
+        android:layout_height="500dp">
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="500dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/feedbackgif"
+                android:src="@drawable/feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </pl.droidsonroids.gif.GifImageView>
+
+            <EditText
+                android:id="@+id/feedbacktxtfield"
+                android:layout_below="@+id/feedbackgif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/okcardfeedback"
+                android:layout_margin="20dp"
+                android:background="@drawable/txtfieldbackground"
+                android:textAlignment="center"
+                android:hint="Type your feedback here..."
+                android:textColor="@color/black"
+                android:textColorHint="@color/black">
+
+            </EditText>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/okcardfeedback"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/black"
+                android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Send Feedback"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

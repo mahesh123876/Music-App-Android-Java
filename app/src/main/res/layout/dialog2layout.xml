@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="40dp"
+    app:cardCornerRadius="40dp"
+    android:layout_height="400dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:id="@+id/cardviewimagebeta"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="150dp"
+            android:background="@drawable/lyrics">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:src="@drawable/belan"
+                android:layout_height="match_parent"
+                android:id="@+id/reccycleimageprobeta">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt1beta"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Circular App Player"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/cardviewimagebeta"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt2beta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1beta"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Single Tap The circle : Pause The Song"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/txt3beta"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="Double Tap The circle : Play The Song"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/txt2beta"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/txt4beta"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="Long Press The circle :  Enter Into Playmusic Page"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/txt3beta"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

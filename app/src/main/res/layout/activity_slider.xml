@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.god.lcproclientapp.slider">
+
+    <RelativeLayout
+        android:id="@+id/forgetlayouttop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/txtfieldbackground">
+
+        <RelativeLayout
+            android:id="@+id/emailimageforregister"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/baseline_mail_outline_24">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edittxtrelativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/emailimageforregister">
+
+            <EditText
+                android:id="@+id/searchgmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/findrelative"
+                android:background="@null"
+                android:hint="Gmail"
+                android:inputType="textEmailAddress"
+                android:textSize="15dp">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/findrelative"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:text="search">
+
+                </ImageView>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/settext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/forgetlayouttop"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/txtfieldbackground"
+        android:gravity="center"
+        android:textSize="15dp">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/settext"
+        android:id="@+id/forgetrecycleview">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

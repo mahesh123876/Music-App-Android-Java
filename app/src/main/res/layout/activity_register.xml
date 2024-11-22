@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.god.lcproclientapp.Register">
+
+
+    <com.github.furkankaplan.fkblurview.FKBlurView
+        android:layout_centerInParent="true"
+        android:id="@+id/loginmainlayout"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <RelativeLayout
+            android:id="@+id/supportforloginmainlayout"
+            android:layout_width="match_parent"
+            android:background="@drawable/deignforbottom"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/closelogin"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"
+                android:src="@drawable/baseline_close_24">
+
+            </ImageView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="150dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/baseline_person_outline_24">
+
+                    </ImageView>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/logincenterbox"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:id="@+id/txtfieldemaillayout"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/txtfieldbackground">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/gmailimageforlogin"
+                        android:layout_toLeftOf="@+id/supportgmail"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:background="@null"
+                            android:id="@+id/edittext_email_for_login"
+                            android:layout_width="match_parent"
+                            android:textSize="15dp"
+                            android:hint="Gmail"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:inputType="textWebEmailAddress"
+                            android:layout_height="match_parent">
+
+                        </EditText>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/supportgmail"
+                        android:layout_width="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true">
+                        </ImageView>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/gmailimageforlogin"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_mail_outline_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/txtfieldpasswordlayout"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txtfieldemaillayout"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/txtfieldbackground">
+
+                    <RelativeLayout
+                        android:id="@+id/lockimageforlogin"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_baseline_lock_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_toLeftOf="@+id/showpassword"
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/lockimageforlogin"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:background="@null"
+                            android:textSize="15dp"
+                            android:textColorHint="@color/black"
+                            android:hint="Password"
+                            android:textColor="@color/black"
+                            android:id="@+id/edittext_password_for_login"
+                            android:layout_width="match_parent"
+                            android:inputType="textPassword"
+                            android:layout_height="match_parent">
+
+                        </EditText>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/showpassword"
+                        android:layout_width="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/baseline_remove_red_eye_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/hidepassword"
+                        android:visibility="invisible"
+                        android:layout_width="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/hidetext">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeloginbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/loginbtnbackground">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Login"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/forgetpasswordtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtfieldpasswordlayout"
+                    android:layout_alignParentEnd="true"
+                    android:text="Forget password ?"
+                    android:textSize="12dp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/registernow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logincenterbox"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:text="Don't have an account? Register now"
+                android:textSize="12dp">
+
+            </TextView>
+
+
+        </RelativeLayout>
+    </com.github.furkankaplan.fkblurview.FKBlurView>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressforlogin"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:src="@drawable/wavetry">
+
+    </pl.droidsonroids.gif.GifImageView>
+</RelativeLayout>

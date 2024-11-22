@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:focusable="true"
+    android:layout_margin="5dp"
+    android:background="@drawable/contin"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Giv_artwork"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/aa">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/Gtv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/Giv_artwork"
+        android:layout_toRightOf="@+id/Giv_artwork"
+        android:textColor="@color/black"
+        android:paddingEnd="50dp"
+        android:paddingRight="50dp"
+        android:text="songs title"
+        android:textSize="16sp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Gtv_artist"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gtv_title"
+        android:layout_toEndOf="@id/Giv_artwork"
+        android:layout_toRightOf="@id/Giv_artwork"
+        android:text="Artiste">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Gtv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:text="3.05">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/Gplay_active"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/Gtv_duration"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_play_circle_outline_white"
+        android:visibility="invisible">
+
+    </ImageView>
+
+
+
+
+
+</RelativeLayout>

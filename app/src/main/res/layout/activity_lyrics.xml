@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context="com.god.lcproclientapp.lyrics">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/lyricsprogress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/wavetry">
+
+    </pl.droidsonroids.gif.GifImageView>
+
+
+    <ImageView
+    android:id="@+id/activity_lyrics_imgView"
+    android:adjustViewBounds="true"
+    android:scaleType="fitXY"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ImageView>
+
+
+</RelativeLayout>

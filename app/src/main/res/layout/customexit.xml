@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sheet"
+    android:layout_height="330dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_baseline_sentiment_very_dissatisfied_24"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/txtexit"
+            android:layout_centerInParent="true"
+            android:text="Sure You Want to Exit in The App ?"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtexit"
+            android:layout_margin="60dp"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/wr"
+                android:id="@+id/wrong"
+                android:layout_alignParentStart="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/cr"
+                android:id="@+id/correct"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
